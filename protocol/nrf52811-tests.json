@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "scope": "Independent Free nRF52811 App tests; unchanged V2 wire IDs",
+  "listTests": [
+    1,
+    5,
+    48,
+    49,
+    32
+  ],
+  "time": {
+    "setRequest": "31,displayMode,UTCLE32,timezoneLE16,weekStart",
+    "shiftRequest": "30,displayMode,deltaLE32",
+    "displayModes": [
+      1,
+      2
+    ],
+    "deltaSeconds": {
+      "min": -31622400,
+      "max": 31622400,
+      "nonzero": true
+    },
+    "utcAndLocalSeconds": {
+      "min": 0,
+      "max": 4294967295
+    },
+    "timezoneMinutes": {
+      "min": -840,
+      "max": 840
+    },
+    "testWeekStart": {
+      "min": 0,
+      "max": 6
+    },
+    "response": "UTCLE32,timezoneLE16,weekStart",
+    "persistence": "TIME record only; test page/weekday hints are RAM-only, ID7 preferences unchanged",
+    "completion": "Normal V2 display PROGRESS/COMPLETE, originating RUN_TEST and transaction",
+    "failure": "Reserve scheduler before durable time commit; cancel unstarted reservation on storage failure, no wall/timezone/page/week changes"
+  },
+  "adc": {
+    "request": "20,channel",
+    "response": "01,channel,valid,readingLE16,celsiusS8",
+    "channels": {
+      "0": "MCU temperature, fresh Nordic TEMP quarter-degree raw sample and Celsius",
+      "1": "Supply voltage, fresh health ADC reading in millivolts",
+      "2": "UNSUPPORTED; no qualified programmed-reference diagnostic"
+    },
+    "completion": "COMPLETE with exact requested channel byte"
+  },
+  "unsupportedTests": [
+    2,
+    3,
+    4,
+    16,
+    17,
+    18,
+    33,
+    34
+  ]
+}

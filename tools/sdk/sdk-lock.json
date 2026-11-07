@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "sdkRoot": ".sdk",
+  "toolchains": {
+    "arm-gnu-nrf": {
+      "version": "15.2.Rel1",
+      "source": "https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads",
+      "path": ".tools/arm-gnu-toolchain/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi",
+      "platforms": [
+        "nrf"
+      ]
+    }
+  },
+  "hostTools": {
+    "jlink": {
+      "version": "7.88j",
+      "source": "https://www.segger.com/downloads/jlink/",
+      "path": "system installation or INKTAG_JLINK_HOME",
+      "acquisition": "manual-vendor-download",
+      "notes": "USB/SWD probe for device identification, complete firmware programming and optional backup."
+    },
+    "nrfutil": {
+      "version": "6.1.7",
+      "sha256": "FEE3AEED1843A4BFFC082747CEA60DC072929EB36E67D62C8A3FD7471E0DC92D",
+      "source": "https://www.nordicsemi.com/Products/Development-tools/nRF-Command-Line-Tools/Download",
+      "path": ".tools/nordic/bin/nrfutil.exe",
+      "acquisition": "manual-vendor-download"
+    }
+  },
+  "sdks": {
+    "nordic-nrf5-17.1.0": {
+      "chips": [
+        "nRF52811"
+      ],
+      "version": "17.1.0_ddde560",
+      "source": "https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v17.x.x/nRF5_SDK_17.1.0_ddde560.zip",
+      "sha256": "5BFE38E744C39FD7F30E10077BA12DF306EF91F368894795D6A3E7A62DC68061",
+      "criticalFiles": {
+        "components/libraries/bootloader/dfu/nrf_dfu_validation.c": "50D03BF26E9778CA0031FFD34C354BB37BE48BD890AEFAF962DB5C1DE56D5F2F",
+        "components/softdevice/s112/hex/s112_nrf52_7.3.0_softdevice.hex": "92bcdc1aa51142ed212bb0dbcdf57093a1bad391f1cf5adca60effe14bdb7ec6"
+      },
+      "path": ".sdk/nordic/nRF5_SDK_17.1.0_ddde560",
+      "acquisition": "automatic",
+      "cryptoInputSnapshot": {
+        "components/libraries/sha256/sha256.c": "3141e7302ab23b3993b3eeb30f8c172718f86986ab7418b39333cadbfec11485",
+        "components/libraries/sha256/sha256.h": "dee4ae9b81e025dd8cbe18f80d1ef78e89e3d6829e9b6be03780593a2ec83e42",
+        "external/micro-ecc/micro-ecc/asm_arm.inc": "f1b83130dcb74e2608773565f0e8460d491538e4bda678492064943704d6c444",
+        "external/micro-ecc/micro-ecc/asm_arm_mult_square_umaal.inc": "db13385f87270e9f770776034948a4506788653bc214f9ddd8c08db150081ba3",
+        "external/micro-ecc/micro-ecc/curve-specific.inc": "658ba0b9b187571a28af16a548f089faaac31a3b6cde4797d45aae5699964e0f",
+        "external/micro-ecc/micro-ecc/LICENSE.txt": "fd0fcdaba5ad2a9ca9b051dd7db92b71a550ce8cd88c4aaae1a8edc564a71eec",
+        "external/micro-ecc/micro-ecc/platform-specific.inc": "23d29cf96801130b80f1c89da0227a349d65e0e3d6033d80b4e6d1aa5ef034c2",
+        "external/micro-ecc/micro-ecc/types.h": "e9f0be93b8bc6147bdb7d4fbb73d2e3fb22b292e4b571da41f16202b534aec07",
+        "external/micro-ecc/micro-ecc/uECC.c": "3a1272df57d133339f71bdef84d581f04779de61502ccdaec65765563d5866c5",
+        "external/micro-ecc/micro-ecc/uECC.h": "8e4d9a8432c2e882972a141988337ab24dee1ae9043b774cf02f4adf7d83a187",
+        "external/micro-ecc/micro-ecc/uECC_vli.h": "71e3886671b4349a7465806630ccd77aa1a61bf0fead26c892c941358778a1cd"
+      },
+      "cryptoInputPolicy": "SHA-256-locked security inputs. Use the micro-ecc revision and checkout settings in docs/building.md to reproduce these bytes."
+    }
+  }
+}

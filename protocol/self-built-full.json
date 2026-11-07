@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "scope": "Host-only local source Full container; not an official release and not a device protocol/layout version",
+  "containerKind": "inktag-nrf52811-self-built-full-v1",
+  "minimumToolsVersion": "0.2.1.0",
+  "members": [
+    "base.json",
+    "full.hex",
+    "app-ota.zip",
+    "gui-assets.bin"
+  ],
+  "additionalBaseFields": {
+    "container_kind": "inktag-nrf52811-self-built-full-v1",
+    "recovery_signature_policy": [
+      "optional",
+      "required"
+    ],
+    "minimum_tools_version": "0.2.1.0",
+    "app_gui_crc32": "uint32 matching the compiled App resource binding and GUI header"
+  },
+  "nativeContract": {
+    "mcu": "nrf52811",
+    "hwVersion": 52,
+    "softdevice": "S1127.3.0 / FWID0x0126",
+    "compatibilityEpoch": 1,
+    "layout": "N1V1/layout-v1",
+    "app": [
+      "0x19000",
+      "0x2A000"
+    ],
+    "recovery": [
+      "0x2A000",
+      "0x2E000"
+    ],
+    "nativeSettingsPages": [
+      "0x2E000",
+      "0x2F000"
+    ],
+    "nativeSettingsSchema": 2,
+    "guiBytes": 12288
+  },
+  "admission": {
+    "officialLegacyFull": "Unchanged, signed App required; no self-built fields",
+    "optional": "Unsigned App may be present. A supplied signature is always verified against the fixed trusted key; a failure never downgrades.",
+    "required": "Valid matching signed App required",
+    "publisherVerified": false,
+    "appSignatureVerified": "Reported separately; does not authenticate self-built Recovery",
+    "normalOfficialCandidate": "Self-built container is explicitly rejected by official reuse/export",
+    "hardware": "No device access during build; complete programmer retains identity/capacity/layout/integrity/voltage/readback and user confirmation"
+  }
+}

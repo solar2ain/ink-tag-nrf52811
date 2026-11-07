@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "platform": "nrf52811",
+  "query": {"opcode": 0, "responsePayloadBytes": 1},
+  "exactProtocolValues": {
+    "0x81": {"guardedResume": true, "signatureRequired": true},
+    "0xc1": {"guardedResume": true, "signatureRequired": false}
+  },
+  "unknownPolicy": "signature-required; no inferred optional mode or guarded resume",
+  "publicBuildDefault": {"INKTAG_NRF_REQUIRE_SIGNED_DFU": 0},
+  "officialProducer": {"INKTAG_NRF_REQUIRE_SIGNED_DFU": 1},
+  "signedPacket": "Packet.signed_command; existing ECDSA-P256-SHA256 trust key; invalid signature always rejects",
+  "unsignedPacket": "Packet.command with op_code=INIT and init; no signed_command",
+  "init": {
+    "hw_version": 52,
+    "sd_req": [294],
+    "type": 0,
+    "fw_version": "(compatibility epoch 1 << 16) | version.json otaVersion",
+    "app_size": "exact application.bin size, at most 69632 bytes",
+    "hash": {"hash_type": 3, "hash": "SHA256(application.bin), reversed byte order"},
+    "boot_validation": [{"type": 1, "bytes": "empty"}],
+    "is_debug": false
+  },
+  "preservedChecks": ["target", "layout", "size", "SHA256", "CRC", "voltage", "epoch anti-rollback", "single-bank admission", "Bank0 confirmation"],
+  "hostAdmission": "Only exact 0xc1 permits unsigned before any destination write; never mark unsigned publisherVerified"
+}

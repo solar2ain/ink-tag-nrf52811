@@ -1,0 +1,10 @@
+# A named required entry must fail closed on conflicting CLI/environment values.
+ifneq ($(origin INKTAG_NRF_REQUIRE_SIGNED_DFU),undefined)
+ifneq ($(INKTAG_NRF_REQUIRE_SIGNED_DFU),1)
+$(error This entry requires INKTAG_NRF_REQUIRE_SIGNED_DFU=1)
+endif
+endif
+override INKTAG_NRF_REQUIRE_SIGNED_DFU := 1
+export INKTAG_NRF_REQUIRE_SIGNED_DFU
+# Compile only: this file neither contains nor invokes a private signer.
+include Makefile

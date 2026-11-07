@@ -1,0 +1,1301 @@
+{
+  "schemaVersion": 1,
+  "buildTarget": "nrf52811_aesl",
+  "unsigned": true,
+  "publicationApproved": false,
+  "rightsStatus": "third-party terms retained; see NOTICE.md and THIRD_PARTY_NOTICES.md",
+  "files": {
+    ".gitattributes": {
+      "bytes": 802,
+      "sha256": "4a25642b474de8d570d48d822de764aa6c947424d4131fc7f16dd07cd507afcc"
+    },
+    ".gitignore": {
+      "bytes": 2523,
+      "sha256": "8cf64b30fd349afed22d94d901c0fe97aea15de712ba974e8196a1bd9119803a"
+    },
+    "CHANGELOG.md": {
+      "bytes": 3817,
+      "sha256": "3c5287c5d22e6b42e10e69df457be544ac10cd6ccbe37f0492afc782d0899bb8"
+    },
+    "CONTRIBUTING.md": {
+      "bytes": 883,
+      "sha256": "708346dba37e62dd10144ac0315c706b8c6b266bc9aa4cae8fb153aef52cd3ae"
+    },
+    "LICENSE": {
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    "LICENSES/GPL-3.0.txt": {
+      "bytes": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    "Makefile": {
+      "bytes": 2469,
+      "sha256": "f785d3a1df6b1f601185b573462a87aaf8cd34ae3d5f80752ae1b69c9f870e4c"
+    },
+    "Makefile.signed": {
+      "bytes": 426,
+      "sha256": "e663decd5f88eca85712c4dbbaa4f83b22e643da35af43d3a54523e9f7e6187b"
+    },
+    "NOTICE.md": {
+      "bytes": 386,
+      "sha256": "5501daa773cf8dbc0ac88c6ffb9756073f350063bc7f903d3eea3db5eabd703a"
+    },
+    "README.en.md": {
+      "bytes": 11729,
+      "sha256": "4aa92ad277c756ccccec4950673eee7e0395aaa141b7008ba68ba76beff4426a"
+    },
+    "README.md": {
+      "bytes": 10816,
+      "sha256": "f23cfc43107e0718a5d994a65e0977679dcf14b2c8318506b5b9f3a93fd04b25"
+    },
+    "SECURITY.md": {
+      "bytes": 1325,
+      "sha256": "3d8d8018f19cb95a29f0f5433a7ef0b01765bb17256c0945aefd37ee528a3ce7"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 10089,
+      "sha256": "f36ec026044cc90dc9cf3d6d061b20f4b3e303f2f1bc97a38e5f63b3106626af"
+    },
+    "build.ps1": {
+      "bytes": 1674,
+      "sha256": "381a3ff55b9f68a3e2d113b446da0c38a7969bed2de84eed34c1e0a0a2506501"
+    },
+    "build.py": {
+      "bytes": 279,
+      "sha256": "3ffb3956666130ee0eb2c63e81b2df606c730f736bd7f56577d50ea606e54d06"
+    },
+    "docs/building.en.md": {
+      "bytes": 14996,
+      "sha256": "94575831b8d3df10b38986aa7867234dbdeddc7a263ae84914a59a82821097da"
+    },
+    "docs/building.md": {
+      "bytes": 14293,
+      "sha256": "b5810be0c0e62a16b16b97bb2c1eaa9237a3e98ed1b1c257277d76ea945e8f07"
+    },
+    "docs/hardware.en.md": {
+      "bytes": 3786,
+      "sha256": "9860aeb899f51656394c00da230bdc323b42f9c6423095bd852ac573cf0e50e0"
+    },
+    "docs/hardware.md": {
+      "bytes": 3244,
+      "sha256": "ac8959bb12cf5a1e68c845ada0bf803537ca1d524dc46b6129b15fe5ac04310f"
+    },
+    "docs/images/el022h2-swd.jpg": {
+      "bytes": 339886,
+      "sha256": "dead106bdfe9cf3f870fe6a7b9ee02ef7ddfc78b0444c8f0dd5366064009336d"
+    },
+    "docs/usage.en.md": {
+      "bytes": 5339,
+      "sha256": "df15d137d99d549002f9f3ffc8a94ae87a73dc5997fe942b6d00f52cdd48dd71"
+    },
+    "docs/usage.md": {
+      "bytes": 5236,
+      "sha256": "980adc0e6148ba12b6b219fcc4a594a6dbc01f20c98b01ba0d329c61f7866d80"
+    },
+    "firmware/boards/nrf52811_aesl.h": {
+      "bytes": 6156,
+      "sha256": "3020a966346e5f87d9dea68f18b0ba5664d4504311d892beaa462bb23b213488"
+    },
+    "firmware/common/README.md": {
+      "bytes": 631,
+      "sha256": "508eee5694f179d6aafc5a221908e28f006da9c0e1cbab8748e430b3708ab8ad"
+    },
+    "firmware/common/ble/inktag_ble_identity.c": {
+      "bytes": 171,
+      "sha256": "929d67fdbacceb55b1750c7456c6bf0a9491ae885433643d9eedaea8787f18df"
+    },
+    "firmware/common/ble/inktag_ble_identity.h": {
+      "bytes": 3431,
+      "sha256": "983d75702d30d0c77dbbdac3c2c8b5a5d5e438ba74d629adba3d33c91ba24fa4"
+    },
+    "firmware/common/ble/inktag_ble_power.h": {
+      "bytes": 348,
+      "sha256": "8eb916df34eb6470b755499abc5850be621dce895edf85aa58abee2879c59058"
+    },
+    "firmware/common/ble/inktag_device_display_name.h": {
+      "bytes": 2074,
+      "sha256": "e6eff422b622d91211292218419ebb060ce02b4e618f421fe9e83715090916f5"
+    },
+    "firmware/common/epd/inktag_epd_commands.c": {
+      "bytes": 798,
+      "sha256": "222b9e714f8b7504709d35206a332cc80fa0bb52a2588feac7f906aee32b34f7"
+    },
+    "firmware/common/epd/inktag_epd_config.c": {
+      "bytes": 54124,
+      "sha256": "eb0212cfc6c792f27bf8350c5c56c8ab64ee916b7ecfdd66d86431ae25217bc5"
+    },
+    "firmware/common/epd/inktag_epd_config.h": {
+      "bytes": 8407,
+      "sha256": "928bedbbb177790b3fbad14f0af964b924a87a31a5ae13544ee588b97c822082"
+    },
+    "firmware/common/epd/inktag_epd_driver.c": {
+      "bytes": 17322,
+      "sha256": "5bbd65c4419d0805f96f94668f3c2b9790848757bd6b3fe7b0134da159fbd82c"
+    },
+    "firmware/common/epd/inktag_epd_driver.h": {
+      "bytes": 12247,
+      "sha256": "4bf5e38933353da4cb5d564a8dc678bc382d58e2fff4d1882da722aa0d7ba2ec"
+    },
+    "firmware/common/epd/inktag_epd_jd.c": {
+      "bytes": 20762,
+      "sha256": "67cf7be2eed1b707e291de7f07634e240023bd21401da05b3c8efe7930f34247"
+    },
+    "firmware/common/epd/inktag_epd_runtime.c": {
+      "bytes": 4024,
+      "sha256": "ae942a74a23fda61aa3ab969abd8c0efccaf1281ea0244ba6e3f5daa936d7f1b"
+    },
+    "firmware/common/epd/inktag_epd_screen.c": {
+      "bytes": 18863,
+      "sha256": "b3467589ef888813cebde44af788b2bd03a3aa719c3121ce2aa878082dec24dc"
+    },
+    "firmware/common/epd/inktag_epd_screen.h": {
+      "bytes": 8810,
+      "sha256": "6653139572cabc7922a41a785169cea9523d2dde22cdfec82b180f05b7a79eab"
+    },
+    "firmware/common/epd/inktag_epd_service.c": {
+      "bytes": 74249,
+      "sha256": "4f6dfbb40c8bb50d0d9874e529d5e8399e75a6072724222b279a38d114cf11e0"
+    },
+    "firmware/common/epd/inktag_epd_service.h": {
+      "bytes": 5411,
+      "sha256": "8cbeb1c7ad871785faaf4e29971a4599e066ead21218e23666d2552c4909433b"
+    },
+    "firmware/common/epd/inktag_epd_ssd.c": {
+      "bytes": 18526,
+      "sha256": "3eb6c4a43b7ee70df9841a81cd48c73f478a3f2aa52a4089057672f6ff4ecc34"
+    },
+    "firmware/common/epd/inktag_epd_temperature.h": {
+      "bytes": 2824,
+      "sha256": "cddeaab6493fbf9c58274ccbfce1634edbfbc3d79315c2e09db79b3fba46127f"
+    },
+    "firmware/common/epd/inktag_epd_uc.c": {
+      "bytes": 14023,
+      "sha256": "29fdf3fcccef625adb6f630c288b261e2e471bb4242a0e99860234759ef28ead"
+    },
+    "firmware/common/epd/inktag_epd_wait_policy.h": {
+      "bytes": 469,
+      "sha256": "682ab99e096e1a4d039b8cfea8b37a285ad5c76d94042cc2a77343de6bd345ad"
+    },
+    "firmware/common/epd/inktag_page_cycle.c": {
+      "bytes": 2961,
+      "sha256": "a4d74707d678c0a22d8691d9835e5ea8ff6a46bd0fb8294ff4ed7ce52a1e337a"
+    },
+    "firmware/common/epd/inktag_page_cycle.h": {
+      "bytes": 2667,
+      "sha256": "06a3ecf78ed7ca07509164e39f96918ab02722a7fdc2a892ba645a3a0cb7105d"
+    },
+    "firmware/common/epd/inktag_protocol_v2.h": {
+      "bytes": 17287,
+      "sha256": "791b01cac1aaa8c7abfd7b66bba76471f95f706be76d795e815f37cbf125b65a"
+    },
+    "firmware/common/epd/inktag_version.h": {
+      "bytes": 460,
+      "sha256": "48269040e84a4a38da4e06b4a45b2c279ae24e69c9ad63d293d4c1563a57ec01"
+    },
+    "firmware/common/gui/Adafruit_GFX.c": {
+      "bytes": 59151,
+      "sha256": "4ce029bdafc2e7211a0637c4a42b06873a6d6a281693e739e5f0287ec665369f"
+    },
+    "firmware/common/gui/Adafruit_GFX.h": {
+      "bytes": 7673,
+      "sha256": "5ed8a4d4a6f7d5cf671850e78451741fee06267ac1bf6fcb38e8e3f81b35721d"
+    },
+    "firmware/common/gui/inktag_calendar.c": {
+      "bytes": 10148,
+      "sha256": "37d36827677551eb441e98dfdbbaa06094999febf85ad580f9b8990dc1fdf11d"
+    },
+    "firmware/common/gui/inktag_calendar.h": {
+      "bytes": 1824,
+      "sha256": "1841b7539631d748f0298b1efc300c423c0acb6bd4a9dafea8017842f91ebb16"
+    },
+    "firmware/common/gui/inktag_gui.c": {
+      "bytes": 8806,
+      "sha256": "14d0b0f93ac73a338de9b8a8c227457a753c66ded634f71d01b8d1f7acc86a55"
+    },
+    "firmware/common/gui/inktag_gui.h": {
+      "bytes": 3905,
+      "sha256": "70eaef91a131ae5fecdc9d952f42e35980cec333ddfc8780e7df78b811b7ef5f"
+    },
+    "firmware/common/gui/inktag_gui_assets.h": {
+      "bytes": 1254,
+      "sha256": "966c560f0b72ccd86998f6723ded7f7acbbf2d4163408b8bf516a83da4090e2f"
+    },
+    "firmware/common/gui/inktag_gui_calendar.inc": {
+      "bytes": 2347,
+      "sha256": "5f383f6230b3d9ef2bc47766161d48d1b07bedff1be941a905fc8a3c9612e126"
+    },
+    "firmware/common/gui/inktag_gui_default.inc": {
+      "bytes": 81304,
+      "sha256": "21d2bfa8b6e23db418eda7e025f650f518772468867f9810f70e718d3948450b"
+    },
+    "firmware/common/gui/inktag_gui_device_qr.h": {
+      "bytes": 1719,
+      "sha256": "d941fabc1d96f533910046eb2bf1ed0c6e69ce5a9733ba2143d4144008be775a"
+    },
+    "firmware/common/gui/inktag_gui_device_qr_asset.c": {
+      "bytes": 312,
+      "sha256": "dbcb8b02141c907d607248a60d27f2f2b9c0d29e74bd8f93d7402acdf6c13cfe"
+    },
+    "firmware/common/gui/inktag_gui_fixed_layout.h": {
+      "bytes": 2152,
+      "sha256": "562a9a580c31a7c0aea6fa59c2256f73544c5f7988ed8c24f3842da0bf143b7b"
+    },
+    "firmware/common/gui/inktag_gui_fonts.c": {
+      "bytes": 29089,
+      "sha256": "80bc03eb6a8e7ab65f5787040f52252127fe98863329b08ef8f492682b361629"
+    },
+    "firmware/common/gui/inktag_gui_fonts.h": {
+      "bytes": 4162,
+      "sha256": "4bf172bf1c1d1e75e689c2354a03aa09db6255e9007bcb288daff09d9d26a128"
+    },
+    "firmware/common/gui/inktag_gui_version.h": {
+      "bytes": 173,
+      "sha256": "e371a749d72b4b57414e0ff6018afa50b5d70050cc69336f0f4c8ff4193a8472"
+    },
+    "firmware/common/gui/inktag_solar_terms.inc": {
+      "bytes": 1174,
+      "sha256": "33be14dbe87972144bc3d6b91fe0aba9c4070eae8ba225a6d70a6a6ae6e1e717"
+    },
+    "firmware/common/gui/licenses/lunar-calendar-MIT.txt": {
+      "bytes": 1063,
+      "sha256": "571591c55f284499f8f6167a3660177531ad2ce0f760a4e58f69ea42b1ac71c0"
+    },
+    "firmware/common/gui/u8g2_font.c": {
+      "bytes": 19053,
+      "sha256": "3d411828335952cdb16e82812f3cc1ab0368be090a581c52b8428d7afd5ea3e6"
+    },
+    "firmware/common/gui/u8g2_font.h": {
+      "bytes": 5189,
+      "sha256": "56f21c19a6d3de7852007fcc7e95ea6c6bc263d93581f03b26293d9c2ab43332"
+    },
+    "firmware/common/health/inktag_health_store_retry.h": {
+      "bytes": 753,
+      "sha256": "76a9619d031d94f5dde047c6255d5ac43fbf81e53034876cabf77bbe1136d686"
+    },
+    "firmware/common/health/inktag_soak_telemetry.c": {
+      "bytes": 7069,
+      "sha256": "5c36a1ceaf76dcd40af55a36b4a70b97610be436aa233bf24c7c54b0d9f05f90"
+    },
+    "firmware/common/health/inktag_soak_telemetry.h": {
+      "bytes": 2101,
+      "sha256": "aa6e2753c21cd25d7c3aa49463ebec13dc4adceada100328c81f602abca486d0"
+    },
+    "firmware/common/input/inktag_input.c": {
+      "bytes": 3699,
+      "sha256": "bc4d392742b0339b50ae1e6a2465b588e58c9449bad3c137b87dd130ebc43934"
+    },
+    "firmware/common/input/inktag_input.h": {
+      "bytes": 2188,
+      "sha256": "0f6091be9aa3a9c1b04d96f5d1491c00191688d1bbd241a1a3c7cecd0e4201a9"
+    },
+    "firmware/common/input/inktag_input_simulation.c": {
+      "bytes": 2269,
+      "sha256": "5688473100ac72abf70a71715e9523eed9b8de44ec181920151e1ff700740e16"
+    },
+    "firmware/common/input/inktag_input_simulation.h": {
+      "bytes": 1251,
+      "sha256": "f432562e53e4698f2d781b0e40475e51d4eacecd0539d44687d26b7e88df0f28"
+    },
+    "firmware/common/lifecycle/inktag_lifecycle.c": {
+      "bytes": 3666,
+      "sha256": "3395d46b3ecbb390f05226470e1c72142b613971d89b628365969c17d97d0088"
+    },
+    "firmware/common/lifecycle/inktag_lifecycle.h": {
+      "bytes": 1126,
+      "sha256": "ea7a173d69fc20dbc65ebcdfd0d23c986b677a3b8e1573ab638a92ff91edf47b"
+    },
+    "firmware/common/lifecycle/inktag_lifecycle_pending.c": {
+      "bytes": 5079,
+      "sha256": "28c88f09d342f5328b509d6d30360406da71ec33334986a2757a109d3cf6a994"
+    },
+    "firmware/common/lifecycle/inktag_lifecycle_pending.h": {
+      "bytes": 3098,
+      "sha256": "13a505f8f6ffd412f1194e245d66f8b4c5c5ad587c9401d912abc88865b64608"
+    },
+    "firmware/common/ota/inktag_ota_reject.h": {
+      "bytes": 3794,
+      "sha256": "d70fbbb2770bca431c1960eb60c46514e4e647539f73b9e230ec9da9e0b43769"
+    },
+    "firmware/common/ota/inktag_recovery.c": {
+      "bytes": 11169,
+      "sha256": "0c56c326a77b899a5e45955103b0e5fee88e1395db89de52fe98122fa2315626"
+    },
+    "firmware/common/ota/inktag_recovery.h": {
+      "bytes": 2720,
+      "sha256": "2292326226d3311ca0aea19cdc680149654d7e5ab3b97489b573ee05e6bd6169"
+    },
+    "firmware/common/ota/inktag_recovery_version.h": {
+      "bytes": 619,
+      "sha256": "b576ae90f710a5f55fdb20d6af505127389e01c324212bc210eb642ce1865ddc"
+    },
+    "firmware/common/ota/inktag_swap.c": {
+      "bytes": 18508,
+      "sha256": "f7072b8845119d04b7f290be68679a4b3650bae5db928c632c20eda36536c1e5"
+    },
+    "firmware/common/ota/inktag_swap.h": {
+      "bytes": 3435,
+      "sha256": "f68833cfa57ab18b4bcac8ab4bd9963dfa2a1f4f43fc97356f0d44e1779ac73c"
+    },
+    "firmware/common/platform/README.md": {
+      "bytes": 611,
+      "sha256": "b1f5910a4fa5115eebab36287354f74dba1610ca9fe8e62de1eaa693cdd92f27"
+    },
+    "firmware/common/platform/inktag_elapsed_clock.c": {
+      "bytes": 218,
+      "sha256": "c1482baaa0c87f0e0febea9e0592b1610029d312cbf90a691f377bd083f55386"
+    },
+    "firmware/common/platform/inktag_elapsed_clock.h": {
+      "bytes": 4492,
+      "sha256": "777d99c7ff50cb4b6e179a583a3efa4163d71cf50393def2998038e2828f15bc"
+    },
+    "firmware/common/platform/inktag_timebase.h": {
+      "bytes": 1394,
+      "sha256": "5489057d3d076b5723a3162c8e50e1b5c5f70839d3395f8e1337039c07205286"
+    },
+    "firmware/common/power/inktag_power.c": {
+      "bytes": 2056,
+      "sha256": "6b16f995cc6473ac646c80aac91c49d8dbe952e81b40c8a2b379df0583dc4aa7"
+    },
+    "firmware/common/power/inktag_power.h": {
+      "bytes": 5917,
+      "sha256": "515d658249944d11bab61d7118bfa17ac31dd3eae6e518e98d764a36ad2d361a"
+    },
+    "firmware/common/protocol/inktag_cooperative_snapshot.h": {
+      "bytes": 764,
+      "sha256": "65e1076b7306e1479bdd9433e2c438164472c471d72d6781f038e54b1cdad412"
+    },
+    "firmware/common/protocol/inktag_display_settings.c": {
+      "bytes": 2876,
+      "sha256": "425385544c7edacb5ffe761d087899f2998c5870afd49293146313950ad95f89"
+    },
+    "firmware/common/protocol/inktag_display_settings.h": {
+      "bytes": 1303,
+      "sha256": "8ba84049aaf7ef86f7d49fcd0f96b449442e3e36716dacf9127407480adbb603"
+    },
+    "firmware/common/protocol/inktag_free_policy.h": {
+      "bytes": 788,
+      "sha256": "22c4186f2a96ed7645b7da435bb545db8933f84f4cbb49ef4e9a02f6c4d2ec86"
+    },
+    "firmware/common/protocol/inktag_packbits.c": {
+      "bytes": 2611,
+      "sha256": "1d775adca4c2874cf5a04a5a386f832463bbf3b6b916778252e233909f0546f9"
+    },
+    "firmware/common/protocol/inktag_packbits.h": {
+      "bytes": 1197,
+      "sha256": "d58302ed9c16c8df5ca0f32b2f31c2a8a765b26686db7c3d475b6357d9e5c8a9"
+    },
+    "firmware/common/protocol/inktag_pin_config.c": {
+      "bytes": 2554,
+      "sha256": "4ffaaba70612633eeae43c8187bc6589324ec7b64b7b9fee4960af6758ba9cbc"
+    },
+    "firmware/common/protocol/inktag_pin_config.h": {
+      "bytes": 1822,
+      "sha256": "44f653eaa89ca7a0abb8510d4c68f159c1a3a6072a3f1d13f8b960d09365773c"
+    },
+    "firmware/common/protocol/inktag_protocol_core.c": {
+      "bytes": 9148,
+      "sha256": "0a44be2f6fdde631e297edfc5259c0deb5cea1f6101e7057d996bdcfe44eb6a2"
+    },
+    "firmware/common/protocol/inktag_protocol_core.h": {
+      "bytes": 3718,
+      "sha256": "0379b43e442c49e4af25a135de88500c8b0042a8360fe8a8fd5df1d7b6d6a618"
+    },
+    "firmware/common/protocol/inktag_release_v1.h": {
+      "bytes": 3995,
+      "sha256": "b2b009e51723ff7fcb753667969152ea8c2345d6243787889e36917a2320f75c"
+    },
+    "firmware/common/protocol/inktag_resource_name.c": {
+      "bytes": 4181,
+      "sha256": "8e3a8b4c240c6502086390af0851234f24fe1672de437e043d50f9c801ba3201"
+    },
+    "firmware/common/protocol/inktag_resource_name.h": {
+      "bytes": 676,
+      "sha256": "8f113abf3305667c3681bf3b16b3eb0831c9b6be46c891a40ed8decb1a9c93ef"
+    },
+    "firmware/common/protocol/inktag_text.c": {
+      "bytes": 1222,
+      "sha256": "551f17208103584ea8f27dd5780367382995c7f68ab9050532d3c05cda87c264"
+    },
+    "firmware/common/protocol/inktag_text.h": {
+      "bytes": 377,
+      "sha256": "bf3e23c4495ae6ceb12b93670d39ff0f241a1a50f87ba7a7e6061a05273c768b"
+    },
+    "firmware/common/security/inktag_brand_overlay.c": {
+      "bytes": 12358,
+      "sha256": "f22422650da36dcaef3fcbe084bd2bbb9f33f57c7481370aa659881adc114c5a"
+    },
+    "firmware/common/security/inktag_brand_overlay.h": {
+      "bytes": 1712,
+      "sha256": "9b775ed0d6d7bdce39d0a8c3ba531c62d168168f87bd7184d280cf398100e8ea"
+    },
+    "firmware/common/security/inktag_firmware_signature.h": {
+      "bytes": 1850,
+      "sha256": "393b99a83569f89fd2c988da804ae9d9b2b8028fe6149009264bca4787a5b307"
+    },
+    "firmware/common/security/inktag_sha256.c": {
+      "bytes": 8290,
+      "sha256": "cd00be3f5907a6e24f7c17b152edfe9a24942ef22998cdb42fc38595ea199e4d"
+    },
+    "firmware/common/security/inktag_sha256.h": {
+      "bytes": 1113,
+      "sha256": "b20f6b2d639a2537673ea932a08e7e93b9cf73ec2e0cbc50363c204075c32f4d"
+    },
+    "firmware/common/status/inktag_status.c": {
+      "bytes": 20397,
+      "sha256": "e8b0fde055ac3fdbc97808789c782408df5489cd3a0d5b3a5565c84fd0051856"
+    },
+    "firmware/common/status/inktag_status.h": {
+      "bytes": 6610,
+      "sha256": "424c2683ef746db17371c84df25afe739e7bd0e8679182acd16ed60e8a665dd5"
+    },
+    "firmware/common/status/inktag_temperature_wire.h": {
+      "bytes": 1145,
+      "sha256": "791b46791b700bc57a2a3b4ec887725affa3a9330364c51bcf9dd10e88292355"
+    },
+    "firmware/common/storage/inktag_board_record.h": {
+      "bytes": 1655,
+      "sha256": "bc172917e94bb12ffebdbd343cf03b1d526ac4f8b3b15dd8cb30c4a00afbc84d"
+    },
+    "firmware/common/storage/inktag_public_cache_retirement.c": {
+      "bytes": 8183,
+      "sha256": "fab488cc3999746420c4516c4efc763c1f60981e0f6f975092c1a24650f681f6"
+    },
+    "firmware/common/storage/inktag_public_cache_retirement.h": {
+      "bytes": 2172,
+      "sha256": "4a8f98fb26ef0ad0882011fffa098c47d592d4b0e460f2222d9bb53978d11bff"
+    },
+    "firmware/common/storage/inktag_settings_journal.c": {
+      "bytes": 34166,
+      "sha256": "ea71d74faad6c8beaa696759d15cb2a5edaaa004658432e5585102ed59356c92"
+    },
+    "firmware/common/storage/inktag_settings_journal.h": {
+      "bytes": 8420,
+      "sha256": "4508d1499b32eed34a1e42d02bad07d8e0ca407a8473900091a5f99736200089"
+    },
+    "firmware/common/storage/inktag_settings_records.c": {
+      "bytes": 3920,
+      "sha256": "5dd503c35d6297df41e5ce256575f0a77dec20ece4aff7e41a1334866a7adb61"
+    },
+    "firmware/common/storage/inktag_settings_records.h": {
+      "bytes": 5473,
+      "sha256": "c9384427347d45b977f0a615a69acf7e1f4c113bad2631a874e5e7f8fd359f36"
+    },
+    "firmware/common/time/inktag_monotonic_clock.c": {
+      "bytes": 2495,
+      "sha256": "c838bca79e0b97f7c6133c906af25ed17d948cab318cad4840fd96640a023b48"
+    },
+    "firmware/common/time/inktag_monotonic_clock.h": {
+      "bytes": 1106,
+      "sha256": "033a02501a6b349db3b19eabd33b99c86eaad2114ccb356c75455b7b32c26fbe"
+    },
+    "firmware/common/time/inktag_wall_clock.c": {
+      "bytes": 2500,
+      "sha256": "43a09f980342b0a35291b25df6a3f76956c8f210813f7041b72c2cc5d6627a3c"
+    },
+    "firmware/common/time/inktag_wall_clock.h": {
+      "bytes": 2355,
+      "sha256": "952e799c7b0876f97073748be1dec07b4211d793137dbf0818418aab616f6a19"
+    },
+    "firmware/ports/nordic/common/config/inktag_board.h": {
+      "bytes": 109,
+      "sha256": "c84b8231b34c5dc04b3ffe250b14d067c014966bac466c2fb5a9cce16ccc9cd0"
+    },
+    "firmware/ports/nordic/common/config/inktag_nrf_clock.h": {
+      "bytes": 109,
+      "sha256": "83cec65c14eb2d10c17fd06f9b5fa383640abae683f684a3ff939cf5bd3f8722"
+    },
+    "firmware/ports/nordic/common/config/sdk_config.h": {
+      "bytes": 257003,
+      "sha256": "551dc4b39af8ac3273ef31e36c3ca1b9a1e90ee15cca92f5f02accfcd705042d"
+    },
+    "firmware/ports/nordic/common/nrf52.mk": {
+      "bytes": 24145,
+      "sha256": "cb22c50089a6f177c5bbe6424702808f6126a67909c734dc9c3d0396955d0457"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_buttonless_guard.c": {
+      "bytes": 986,
+      "sha256": "affdf1dd9de7985c9ea8f840cade8c9732eea725adb1e6523b358bdfabf19b1b"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_buttonless_unbonded.c": {
+      "bytes": 2371,
+      "sha256": "fedd2681b5836254a28c41b512a324993f0ed3137d8bd809db517dc74c9f2f9d"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_config_store.c": {
+      "bytes": 32140,
+      "sha256": "531118c62c8bc47a54f042b30a675c7844244919145dfe29031498bf085dab07"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_config_store.h": {
+      "bytes": 3794,
+      "sha256": "d1eb3589e60667c262238e705350aa52a6c8aeb267ee508f68d09593428fd615"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_config_stream.inc": {
+      "bytes": 2920,
+      "sha256": "a7e63623c76dbe56c459ff6add831e8199eba4ede9d6050eda621fc2fa4301a0"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_config_stream_commit.inc": {
+      "bytes": 2825,
+      "sha256": "480ac1b243782a99e728c19d246ed5e375ae8a4ce9f94b247bdbfc87650330d6"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_activation.c": {
+      "bytes": 3103,
+      "sha256": "26246497001ff3419d23cdc39cae41ed8b13a9fa61afda665b2a391fcdf1e67d"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_crypto.c": {
+      "bytes": 1932,
+      "sha256": "26f682ab61de0b2d88bec1ecb2118c46360330abae9c9298e74306377c411b44"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_crypto.h": {
+      "bytes": 664,
+      "sha256": "88966d4cc5630ccefc9fa861c0bad3b6f831d0e4f06885335bcc07abc5b9299f"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_epoch.h": {
+      "bytes": 1123,
+      "sha256": "80a73a6f157018e6a69b274d833889dca24a602535f72f97fe4093104c52ac99"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_fixed_name.c": {
+      "bytes": 1658,
+      "sha256": "34ff0ea9daea300fa6e241d00be9838e21ded597907309c538588816ae45cc8b"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_flash.c": {
+      "bytes": 10684,
+      "sha256": "83bc83f9c6dd1840a2d10cdda16cc7946f2f67d077fc809cb7a3767a8b68d9a8"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_policy.h": {
+      "bytes": 911,
+      "sha256": "b2e15969495ab883ca10195f584d5d7c3efe7f17dd363c024e4f6108fddf4927"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_power.h": {
+      "bytes": 571,
+      "sha256": "07e2f20fcc0fa5aefa2b10952ce7733b127b90825319bb9de5d4a07bdf4000ba"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_resume.c": {
+      "bytes": 7732,
+      "sha256": "50fecd794cd8f41f4d0965290888db84387dc726786a172ab2339de9c76467e3"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_resume.h": {
+      "bytes": 953,
+      "sha256": "bb371d524f835e1479395ff2c05b5eb17517c793699a3f7f60ee094043510e38"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_dfu_ver_validation.c": {
+      "bytes": 1739,
+      "sha256": "9f8b939e885d7b7ab99fffe26f114fd09700771b53ae37436fd6c5a80a0a0cff"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_epd_commands.c": {
+      "bytes": 778,
+      "sha256": "b0abd9b77832b4e1005c0d51dac1de9faf7c1e71668b5645c76aaaa0e2cd50bf"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_external_assets.c": {
+      "bytes": 5503,
+      "sha256": "b3830bd14e420cd6c5df0a2cd4fb00ec21c6c2f600d23c2e7613a09f897bf4fe"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_external_flash.c": {
+      "bytes": 7341,
+      "sha256": "1e1d4537ff6b0e41977785eefe9d175a4c7b7d76b35ba1b6cdc643dc4b22716c"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_external_flash.h": {
+      "bytes": 766,
+      "sha256": "588ef9b91bc91f405be051494c43ca605c3cb611e5c9f3f7518f672482f93263"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_health.c": {
+      "bytes": 19910,
+      "sha256": "50b393545840d734c2593f0e0c4638c9bbf822ade43709e520890fb297e3a40c"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_health.h": {
+      "bytes": 1947,
+      "sha256": "55eb770205c5fa5c21e6fe8f61e3087df6dc80e8b7c2d4989744c43139ec5578"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_image_fixed.c": {
+      "bytes": 21470,
+      "sha256": "2527d467be64edbcd2a85ab519bebe38ea6c309de153940be867b22ef198ab7f"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_image_physical.h": {
+      "bytes": 3425,
+      "sha256": "f87554a410410b9d307f1e84b979f65ecba7a7cb509194c67aa27c5bc9a1100c"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_image_simple.inc": {
+      "bytes": 1799,
+      "sha256": "4e8af7ea1c1e79e937ceff017c18393b1de5c20eebb5a1f5267f7ad8e0dbddaf"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_image_store.c": {
+      "bytes": 46640,
+      "sha256": "8ad03cbe501a37e097befceb839b083e470ecd2ddbb8184a37dfab396e2f40b3"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_image_store.h": {
+      "bytes": 5554,
+      "sha256": "17427aa46e2a83164107163af7b5ad9d1bf8d1402b345a0fdfc82acf0bc21fda"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_led.c": {
+      "bytes": 217,
+      "sha256": "49cab6b8dcfc5c63cdc4dfdb64e20523a81924fd91d5b4f6f991441218d11db4"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_led.h": {
+      "bytes": 120,
+      "sha256": "d94953f245c64d63c42d052c681fa648047c549407560d4c82e51033051fd068"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_native_v1.inc": {
+      "bytes": 19200,
+      "sha256": "e18bdf51c84e907b8c559950346fa1bb68d38994c9453c5c6e3ec704fb0bb545"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_pin_epoch.c": {
+      "bytes": 733,
+      "sha256": "82b2b5d772c518343a793c47691168e790f234e45e246f6611260b52d5ce2680"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_pin_epoch.h": {
+      "bytes": 403,
+      "sha256": "6b09db82af8ee659f02b33e9dbcb387200ff4c0311ee84ea0d1f4bd5df669463"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_pins.c": {
+      "bytes": 3373,
+      "sha256": "46607ee906eeb493c0459c898dd887bfcc82752d194031480c2c1f1e0e717130"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_pins.h": {
+      "bytes": 1310,
+      "sha256": "2c24b9c1d865e29967d2d0d3ac2c8c3b58090ebd7662c1611de33529fad0f0a3"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_protocol_v2.inc": {
+      "bytes": 126614,
+      "sha256": "ca9187eb549ad05ab0b3ccb4f4ea54aa6be69ae3de46fb973c492e44671d3831"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_record_store.c": {
+      "bytes": 2937,
+      "sha256": "dd21f879ef34e2de37de6e7b02c52e9fd95550aa6b64baa5b7c83e15f9b9cace"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_record_store.h": {
+      "bytes": 1009,
+      "sha256": "b43999a4087724abdb766029fd5b3dce0beb5c362bafc50e304a3d6a772cfadf"
+    },
+    "firmware/ports/nordic/common/src/inktag_nrf_unsupported_status.h": {
+      "bytes": 1582,
+      "sha256": "5b156dd1c09a30173a7ee86d24bb04ad13d785b4799370ec463a026615479848"
+    },
+    "firmware/ports/nordic/common/src/main.c": {
+      "bytes": 39841,
+      "sha256": "2da2322be622badb8801928f2bc0e3c3ba067951fa32dd18d96766b90592f069"
+    },
+    "firmware/ports/nordic/common/src/main.h": {
+      "bytes": 333,
+      "sha256": "ec1d26d1c78e4a412f164991357c354b1567b1dac382d30fb7695f24735412f4"
+    },
+    "firmware/ports/nordic/common/tools/merge_hex.py": {
+      "bytes": 3105,
+      "sha256": "d3e1b9439be0e60a50ce444bf61af2ff1fdc8a7a9840ab9a52e044c99c2b5733"
+    },
+    "firmware/ports/nordic/nrf52811/FLASHING.en.md": {
+      "bytes": 4678,
+      "sha256": "9607aadf1d5742ec378234250b4abfec3bc38b809aa7c853ebd4b3b690c0ab8a"
+    },
+    "firmware/ports/nordic/nrf52811/FLASHING.md": {
+      "bytes": 4565,
+      "sha256": "54e7f08a8aa559ef095fcb928651500ce621cec3a71c0dca7a731a373190dcce"
+    },
+    "firmware/ports/nordic/nrf52811/Makefile": {
+      "bytes": 1691,
+      "sha256": "0c8e224c4caf84b3ddaeeafc8d10b8697c8ab60721c5393e9f500a2a2b92e5b7"
+    },
+    "firmware/ports/nordic/nrf52811/README.en.md": {
+      "bytes": 1250,
+      "sha256": "0de49c4d3d7852dd7c71df60daa9338e21ac5655abfb91a4e37f22d2ba0c7d95"
+    },
+    "firmware/ports/nordic/nrf52811/README.md": {
+      "bytes": 1106,
+      "sha256": "61a0ddc6a760d96c753ea0c6bc5bc563c9976367584f7b0a2c3bbb588fd235d4"
+    },
+    "firmware/ports/nordic/nrf52811/bootloader/Makefile": {
+      "bytes": 18743,
+      "sha256": "9a2bc066a37f276f1ba31d803fda33f811fdce7aafca6f8c9659e2b12f389f37"
+    },
+    "firmware/ports/nordic/nrf52811/bootloader/bootloader.ld": {
+      "bytes": 3759,
+      "sha256": "f613859c0efdbc6cca82410a59f720723841a6bae43124592e4ec20b4c07576a"
+    },
+    "firmware/ports/nordic/nrf52811/bootloader/src/dfu_public_key.c": {
+      "bytes": 630,
+      "sha256": "bf861b54bbc92f2df6d9eb6b4cb263708792bc821ee7ad516a2951c4472b3e24"
+    },
+    "firmware/ports/nordic/nrf52811/bootloader/src/main.c": {
+      "bytes": 13284,
+      "sha256": "2aff9b66324b4b36ddbf614115edf2f869bb955f96b754a715588ba69ec73bf2"
+    },
+    "firmware/ports/nordic/nrf52811/bootloader/src/nrf_crypto_allocator.h": {
+      "bytes": 2444,
+      "sha256": "e0a18701e76ba843a33f1db2365558013ec59262940a33dd18077aa5a692031e"
+    },
+    "firmware/ports/nordic/nrf52811/bootloader/src/sdk_config.h": {
+      "bytes": 140472,
+      "sha256": "92b2683079d69eae45e48ab85ada6d396fd1d7bac4bc16920d4ad59ccb3b84e0"
+    },
+    "firmware/ports/nordic/nrf52811/external-fonts.ld": {
+      "bytes": 417,
+      "sha256": "38653364580cdf4f5c7305585281beb1cf378bdf112f4d8ba30df6802249bba8"
+    },
+    "firmware/ports/nordic/nrf52811/linker/app_s112.ld": {
+      "bytes": 3322,
+      "sha256": "55a15ddc97b60517fea8875b4a30580413fc0dadda75373f3f3d29dbc588bf5d"
+    },
+    "firmware/ports/nordic/nrf52811/tools/cache-font-glyphs.py": {
+      "bytes": 1984,
+      "sha256": "b92c31c5e6ddbe5a2d7873dfb5a28a4679b1a6ab230d5214363c79e441644667"
+    },
+    "firmware/ports/nordic/nrf52811/tools/compact-epd-commands.py": {
+      "bytes": 5553,
+      "sha256": "3c748c875bc0c82716d1dac3c6121cafd2dfba14913c54cde2cb660ee59caf57"
+    },
+    "firmware/ports/nordic/nrf52811/tools/gui-pool-v1.json": {
+      "bytes": 11577,
+      "sha256": "81324d97892df36aa37c417f6b0fa35dc22b162cc62b094e5755589a8c308764"
+    },
+    "firmware/ports/nordic/nrf52811/tools/internal/nrf11_full_format.py": {
+      "bytes": 12904,
+      "sha256": "b588d9fcba83319a5230b2ca2c9cab8c641fb0c50305d963c551efefa17ab6f5"
+    },
+    "firmware/ports/nordic/nrf52811/tools/internal/validate-full.py": {
+      "bytes": 6306,
+      "sha256": "cc95d49cff870bf7ea82371a94b77ce76468a035c26778fd082c4fb4ac2c6330"
+    },
+    "firmware/ports/nordic/nrf52811/tools/package-font-assets.py": {
+      "bytes": 2375,
+      "sha256": "fb9aeee880337ab5c42725d1fdba2636e0c050bb2f98f4f053bffd33c9812d01"
+    },
+    "firmware/ports/nordic/nrf52811/tools/ram-gui-tables.py": {
+      "bytes": 14070,
+      "sha256": "f728068c97422d39dd7c8f2d2c63b8e0f8381e4950ab1131aae51c7a714f7a43"
+    },
+    "protocol/README.md": {
+      "bytes": 2108,
+      "sha256": "fe4faad23d115c50b4bd33515d1b963a6337005212089362a58aae9d6a6788e0"
+    },
+    "protocol/nrf52811-ota-policy.json": {
+      "bytes": 1326,
+      "sha256": "b82069ff2171910c9d1dec40019ed69a8dab9b40d24ca0a0c1769d42efaa51f9"
+    },
+    "protocol/nrf52811-tests.json": {
+      "bytes": 1540,
+      "sha256": "11ce3ec60c7354b51e398cfbd924dd14d971f9da8114e9d593fa631172298aa1"
+    },
+    "protocol/self-built-full.json": {
+      "bytes": 1721,
+      "sha256": "fbe6cc552da6f2363d4bc3e981b5d84d898f2bde3f5ddaaf98a442ff6537a427"
+    },
+    "tests/fixtures/lunar_calendar_external.txt": {
+      "bytes": 1201,
+      "sha256": "ac4d7f7b2194e5b3d1ba2ab7d45eb8eed5e1f272144c93bdc868676a52dcf6ee"
+    },
+    "tests/fixtures/lunar_calendar_probe.c": {
+      "bytes": 2588,
+      "sha256": "b3704eff273fbe7db9c4277a289f966ce45f482e2e988b6055de90fcecc30443"
+    },
+    "tests/fixtures/nrf11_full_fixture.py": {
+      "bytes": 4439,
+      "sha256": "593ac180aeed8776e84844b9557ee20a0ddd51e79176e38daa86048da3533545"
+    },
+    "tests/fixtures/nrf_native_v1.inc": {
+      "bytes": 26182,
+      "sha256": "60619da6c824da9f325f79f3f97925a33366f50880ca05ddd1785208fdef6891"
+    },
+    "tests/fixtures/nrf_time_pages_oracle.json": {
+      "bytes": 2659,
+      "sha256": "2f191a70f05cd50c207f94343449762454e7474d4ba895038e99c0d67dd9cefc"
+    },
+    "tests/free-test-manifest.json": {
+      "bytes": 27115,
+      "sha256": "2ca7a6b6f06d375f62adadcc307dac17cad9b490270afd3c00ccf0ca43604b1e"
+    },
+    "tests/mocks/nrf_crypto/sdk_common.h": {
+      "bytes": 324,
+      "sha256": "b77e0ccd4995bd13db148cfaebfed35da012e2f87d70da9aac386482886c9210"
+    },
+    "tests/mocks/nrf_external/inktag_board.h": {
+      "bytes": 238,
+      "sha256": "e71648b98174ff1f22bba3d5b31d8802b7d58b255265a2521681bfb6910425a3"
+    },
+    "tests/mocks/nrf_external/nrf_error.h": {
+      "bytes": 330,
+      "sha256": "5b010a0365da4b913a6d4c85340041f4d2c08f1ee1af58a73fd7986253d852ee"
+    },
+    "tests/nrf_sdk_host.py": {
+      "bytes": 1321,
+      "sha256": "e446ebe265b293b48deee331bdf7f75c1f026754c69bc1edfc3976ce9f426069"
+    },
+    "tests/test_epd_commands.c": {
+      "bytes": 1825,
+      "sha256": "47e8412b4fa0ddc8f68441e6a11d8f0d1700b21143936bdec362fff10f6be95d"
+    },
+    "tests/test_epd_screen.c": {
+      "bytes": 13985,
+      "sha256": "330dfdc112f3841a6b5a8ab0406f707a356a7163504064b6ae298a9bdef9dbe5"
+    },
+    "tests/test_epd_screen_core.c": {
+      "bytes": 2061,
+      "sha256": "a9467729ba23f8cdd0ddf8e49e23f07d503f6bd5ca88794c60d128cb1b703941"
+    },
+    "tests/test_epd_screen_nrf52811.c": {
+      "bytes": 4941,
+      "sha256": "808a7bb42500dd98198525e6465b12a2e7225a604ae37829381f1bc8e5ef2ef0"
+    },
+    "tests/test_epd_temperature_decode.c": {
+      "bytes": 3804,
+      "sha256": "82de69711b96f55c6e4d2975fd0f9d1882ddb49b7cb8c33453bc751d05927cfc"
+    },
+    "tests/test_free_source_boundary.py": {
+      "bytes": 3769,
+      "sha256": "370b61d645d6c9f460ece1c88f6618541347694f5b23d0bc937293980d401c08"
+    },
+    "tests/test_gui_calendar_metrics.c": {
+      "bytes": 3959,
+      "sha256": "efdc064803dddc8cbb6a556e5d8b8dfc5160880536cb3d5c039ce11c350006dc"
+    },
+    "tests/test_gui_canvas_init.c": {
+      "bytes": 1855,
+      "sha256": "d37263c547fdd6c641decb648d2cf05f1632a16d1eed6f1b215106c7417e9634"
+    },
+    "tests/test_gui_compact_arithmetic.c": {
+      "bytes": 1317,
+      "sha256": "ec885eddb40e1cb9f4fcfea86e88f5ba8b668cecf1c2b18d269f49e640b427d1"
+    },
+    "tests/test_gui_device_info.c": {
+      "bytes": 20783,
+      "sha256": "9521159caee47131fbf1528181993301df943cb353bd1630b14fbe4139a4802d"
+    },
+    "tests/test_gui_free_target.c": {
+      "bytes": 1752,
+      "sha256": "a3c0de34f678e8dd527fd75dce5e73e228de2830b12a76217c03a74097d547c7"
+    },
+    "tests/test_gui_full_frame.c": {
+      "bytes": 34433,
+      "sha256": "dc832fa25439da949c0a1a22ecdf64f2fabc4f862da54dbd611845cf26e95421"
+    },
+    "tests/test_gui_glyph_page_edges.c": {
+      "bytes": 3738,
+      "sha256": "06f294c324b5f5e6b735c80354ee4206ae6c4a121eef3b7257aa10ab8969ed35"
+    },
+    "tests/test_gui_small_screens.c": {
+      "bytes": 5964,
+      "sha256": "eee88ac0fd3b1f730e4c90b0eb715b8aeaf933febcbfa1f338b93cee4cde2749"
+    },
+    "tests/test_image_reading_orientation.c": {
+      "bytes": 5294,
+      "sha256": "1d4120f190874c9258f5211d821fae16d6d72741c19e57e5e5c04d18941abf52"
+    },
+    "tests/test_inktag_ble_identity.c": {
+      "bytes": 2217,
+      "sha256": "dc0b669b8b44a61fd20fffc76a6dd89075ec3a69139d5def10d9b01b946fb25e"
+    },
+    "tests/test_inktag_brand_overlay.c": {
+      "bytes": 15309,
+      "sha256": "4b27b7714a616a0a3d875592ec8362d759237b8885eb163bf346003114a03b4e"
+    },
+    "tests/test_inktag_display_settings.c": {
+      "bytes": 1655,
+      "sha256": "1934e96e4aa18da913854a8d1ae0205964dc121a2f09ed0bf945619792932fb4"
+    },
+    "tests/test_inktag_elapsed_clock.c": {
+      "bytes": 2853,
+      "sha256": "8017c8590d388640c00d0b7bb9a205e0d5f8af16b1ef595c437ee255f214be39"
+    },
+    "tests/test_inktag_input.c": {
+      "bytes": 3745,
+      "sha256": "0e9b5371ec8f5ee7c9ff59f10f2b4b0f1b66d9b890ded4eb89d355f80061a59b"
+    },
+    "tests/test_inktag_input_simulation.c": {
+      "bytes": 2925,
+      "sha256": "983f0745c8cdf3f28af8f97eb7a417dce30720afa7004b003629b5fd9f4337b5"
+    },
+    "tests/test_inktag_lifecycle.c": {
+      "bytes": 4231,
+      "sha256": "8266d345834fbb49d912bd6a0be9c4dcf2714c70390257511f956afb402a2695"
+    },
+    "tests/test_inktag_monotonic_clock.c": {
+      "bytes": 2896,
+      "sha256": "4a213b6b5b6addd6ebf0937bd270eb1ce6d04d74f46744f058dae2ebf09bc38b"
+    },
+    "tests/test_inktag_ota_reject.c": {
+      "bytes": 1441,
+      "sha256": "177bf4b84ed2a1840690c53984886142e5a0608c0e38740b035922f5ecdc74ff"
+    },
+    "tests/test_inktag_packbits.c": {
+      "bytes": 2581,
+      "sha256": "4575da8538ebed4bbb58c797a7c420b7e6b278c455ea887730c9aa4bfa688b06"
+    },
+    "tests/test_inktag_page_cycle.c": {
+      "bytes": 6035,
+      "sha256": "9e41f7373760fbaffdf43890e956d77a4d922d12465ed60fba0ee241dd7ae3a0"
+    },
+    "tests/test_inktag_power.c": {
+      "bytes": 4269,
+      "sha256": "9aa8119d004295e69cb46d8279e2a364cc235b8d8769a6799c0a88f34aca8d6b"
+    },
+    "tests/test_inktag_protocol_core.c": {
+      "bytes": 5721,
+      "sha256": "d8a88a3cadf8d101d2c6bc8ebedf07686f2937d42945f04f0ba3a9ac5d879423"
+    },
+    "tests/test_inktag_settings_journal.c": {
+      "bytes": 31249,
+      "sha256": "37844aa48fb6d8001dc7e1ac0e71321eb7e8bd007f3a057b17b65d4228c26c78"
+    },
+    "tests/test_inktag_settings_records.c": {
+      "bytes": 6771,
+      "sha256": "c0a9da26926005f7210ee980e81f0192fcca4edcbc47ad963792aac21f24bec7"
+    },
+    "tests/test_inktag_sha256.c": {
+      "bytes": 3247,
+      "sha256": "4ee869a50720bed0b78a3095a75e4424ea5ac6cd6a25c0693b71448b04ae4612"
+    },
+    "tests/test_inktag_soak_telemetry.c": {
+      "bytes": 2317,
+      "sha256": "53006d5f51bdc16c79d1c8baa6b8fca6b58af5bf23c746aac427420590236764"
+    },
+    "tests/test_inktag_status.c": {
+      "bytes": 25681,
+      "sha256": "2ae53c1481e57ad7cc585a3db5650fe3535fd8c467281ec27b077558d4dfbc82"
+    },
+    "tests/test_inktag_text.py": {
+      "bytes": 4953,
+      "sha256": "ced04321164baba461acb9144a53582bc25f5dcdfdf22264d3fe1bf9bd4feff6"
+    },
+    "tests/test_inktag_wall_clock.c": {
+      "bytes": 2923,
+      "sha256": "03df4458a6877f9d4ed0b29a7e3a38db281facc843c17f0785d8d691c24085fc"
+    },
+    "tests/test_iso_week.c": {
+      "bytes": 1738,
+      "sha256": "f02d5a6eff6996dfee33305f675a0f300fa6235b3a4060186c511ef52bb82d00"
+    },
+    "tests/test_jd79665_huawei_a1.c": {
+      "bytes": 8882,
+      "sha256": "62ac09071bc237c2722809b2e1abafcc240036a91af17e7cdc93e5f8acc0c123"
+    },
+    "tests/test_jd79668_hanshow.c": {
+      "bytes": 12651,
+      "sha256": "b19fe51a0fd9e0b226cce4693fa4a9d0e6f6dc88a48a2cad3ce832a49d9fd739"
+    },
+    "tests/test_jd79xxx_recipe_matrix.c": {
+      "bytes": 7285,
+      "sha256": "04f935996df577aab098842a33ba8cbb55cbecf8f2361e6a2718621f8c9a8812"
+    },
+    "tests/test_lifecycle_pending_scope.c": {
+      "bytes": 9474,
+      "sha256": "9aae133a0bf6560f4e79638ea3d3128b658fcc431c36cf48871124bbd1c3a63f"
+    },
+    "tests/test_lunar_calendar_rewrite.py": {
+      "bytes": 3704,
+      "sha256": "a289202b6be010369a9eb6a611299d97875c6235831deb890068ccc36e9f0091"
+    },
+    "tests/test_nrf_app_attestation.py": {
+      "bytes": 2280,
+      "sha256": "ed7480cb9766b3a255c05df2fe32cc4e4cf19d729c49ae90141ba6a5c4db6ca4"
+    },
+    "tests/test_nrf_auto_refresh_continuity.py": {
+      "bytes": 27659,
+      "sha256": "893c1ab328b375d131311f479d51abdb41507d73b32d0761c3832cfbf332794e"
+    },
+    "tests/test_nrf_battery_icon.py": {
+      "bytes": 3026,
+      "sha256": "6eabb4c203ec2159ca9e4e93a3bb6f27040ae08e76fd84e378ab3cf1da750a4a"
+    },
+    "tests/test_nrf_boot_indicator.py": {
+      "bytes": 3701,
+      "sha256": "e29095243bb77f1a49b5f0060993fe28cbb0456bcb86af931b130de02daaf749"
+    },
+    "tests/test_nrf_build_entries.py": {
+      "bytes": 5305,
+      "sha256": "63cbd7e508ea58f85be89346bd85927ba4e36cb094ab1209984b267e9fa85e41"
+    },
+    "tests/test_nrf_busy_cancel.py": {
+      "bytes": 2872,
+      "sha256": "74c6b2d02a9932ed64269b01004d0e870648522e49f662df2c4e5eabb78e9bc0"
+    },
+    "tests/test_nrf_clock_hhmm.py": {
+      "bytes": 6209,
+      "sha256": "a7a6c2facfb405b6089439d01261158e6833942bf0a8ba4377f1c93e24998ac9"
+    },
+    "tests/test_nrf_common_backports.py": {
+      "bytes": 6592,
+      "sha256": "e8710982f3e317b7228bc25a0979325e62a5cc6cdd418d7f297903ee094fee62"
+    },
+    "tests/test_nrf_compact_epd_init.py": {
+      "bytes": 4203,
+      "sha256": "bf70a729a56dd7f2158908ccb8557d23ed2142e7012c044b2870dae0fa9f8268"
+    },
+    "tests/test_nrf_compact_formatter.py": {
+      "bytes": 6560,
+      "sha256": "0c44cf62d9ab9e676633a8f8e0688610f260885165ebfb2503160b1d356ac99b"
+    },
+    "tests/test_nrf_compact_screen_catalog.py": {
+      "bytes": 8686,
+      "sha256": "0c2d03eb9e839fe76e8068594618571273e45f40495411e8a89dfa552214ecad"
+    },
+    "tests/test_nrf_config_stream.c": {
+      "bytes": 10656,
+      "sha256": "7faba12e52a584eccab78442a3c4a8ec77abbf782367b47f12a1985ecf279b42"
+    },
+    "tests/test_nrf_control_capabilities.py": {
+      "bytes": 22457,
+      "sha256": "8985ff78b5570e52b13cf41266f86feae143053a9b23e5253bb1c7d9f0b490db"
+    },
+    "tests/test_nrf_dfu_signature_policy.py": {
+      "bytes": 9959,
+      "sha256": "ad4f840694ebb4497d466b81f12f7b613fbac6ac48fc58db1d676f45e8598da7"
+    },
+    "tests/test_nrf_display_mode_mapping.py": {
+      "bytes": 2302,
+      "sha256": "264ef6ebf9e064f4eaaf48ae19a2e117deca79e0271334c71677b69284fd2405"
+    },
+    "tests/test_nrf_display_power.py": {
+      "bytes": 11658,
+      "sha256": "a8ea119bb41cf4bfaf2d8b96fc8ffcf7ee5066987a79743ac1dfb27c0177903d"
+    },
+    "tests/test_nrf_empty_replies.py": {
+      "bytes": 2075,
+      "sha256": "292081ffae0c669bbb7e281c2c749127d6aa8310928fddddbc9333d3aac447ca"
+    },
+    "tests/test_nrf_epd_read_command.py": {
+      "bytes": 4030,
+      "sha256": "250350f4d7987634aa5a164449a8d0d9220a38005d5220f8049dd5a0f6293547"
+    },
+    "tests/test_nrf_fixed_gpio_projection.py": {
+      "bytes": 10067,
+      "sha256": "a0458c7a4feb1a61863bce49738119ddc9c6670ae6f0be503ee013446ec57dd9"
+    },
+    "tests/test_nrf_fixed_image_store.c": {
+      "bytes": 13872,
+      "sha256": "1718be9f19b79f9f5414fd51aea0093bce46fd2de767a4416d84e2d5cb244668"
+    },
+    "tests/test_nrf_fixed_slot_protocol.py": {
+      "bytes": 11933,
+      "sha256": "d58c3bf815c6b91885abf11fac35d62dcce6c09ce50452aa4098a2e00e63b99b"
+    },
+    "tests/test_nrf_free_label.py": {
+      "bytes": 5632,
+      "sha256": "88a39c68251c3d950c6ab7ee50abcd85ddd6f2f480aed52f2ada3eda7ce9a895"
+    },
+    "tests/test_nrf_gui_asset_info.py": {
+      "bytes": 7068,
+      "sha256": "d90d531f1df87c547262e742e5909940b79aad1bba0980313d7a85f697ac26e3"
+    },
+    "tests/test_nrf_gui_asset_loader.py": {
+      "bytes": 5958,
+      "sha256": "2e069321214f67f1aee264553f5495b45fc6403f47778c454efec051be1d8250"
+    },
+    "tests/test_nrf_gui_page_budget.py": {
+      "bytes": 4660,
+      "sha256": "887253af3479d192b2f0968cda74f311adfc5dd0723516d88099327593551024"
+    },
+    "tests/test_nrf_gui_ram_tables.py": {
+      "bytes": 5072,
+      "sha256": "657ae0ea1ed63cea3fe01c57243fb95d20d5dbf0a27f7b04ead0d12a067fe716"
+    },
+    "tests/test_nrf_health_diagnostics.py": {
+      "bytes": 17834,
+      "sha256": "fb2367fb82a3507f4e0b5cf4a503dabf91434365a1cb06681cbbda658eaef87d"
+    },
+    "tests/test_nrf_health_store_retry.py": {
+      "bytes": 15506,
+      "sha256": "cca2e5360afc17409505b4ad05b75b051cc8fca3acb510711071a178c38d81d8"
+    },
+    "tests/test_nrf_hourly_checkpoint.py": {
+      "bytes": 2523,
+      "sha256": "6135c60fe5c889c39a624efbefba18424c0e36d91d276b1b5aa6775f28f81a3d"
+    },
+    "tests/test_nrf_lifecycle_v2.py": {
+      "bytes": 9451,
+      "sha256": "b3cbfff59f7440e2182558dab0f7ebbee528bee35585f868ad50c790e6178db8"
+    },
+    "tests/test_nrf_native_v1.py": {
+      "bytes": 3869,
+      "sha256": "8418075a905b80ff6861d5e9327a479b238ee123f32c05e25feffb2c871afea8"
+    },
+    "tests/test_nrf_physical_image_store.c": {
+      "bytes": 14494,
+      "sha256": "a7a21cabd3434eb58e90aa5678d99c831ffc4dcc13bcb567b18c39153ceb73c4"
+    },
+    "tests/test_nrf_recovery_flash_queue.py": {
+      "bytes": 8430,
+      "sha256": "895838e631e283cddc8b6b074e5a2f18dda2917e7a74b136c3e2ee5214946202"
+    },
+    "tests/test_nrf_recovery_indicator.py": {
+      "bytes": 6930,
+      "sha256": "ee9163512bdda963a2b3d5a8096fe3855f1f43769d69c63b371267d674a2dc9f"
+    },
+    "tests/test_nrf_recovery_queue_irq.py": {
+      "bytes": 4729,
+      "sha256": "0efa45aced694b767b3912860ef80af7b2f8ba541f6f7b15d57af7b5e65a2706"
+    },
+    "tests/test_nrf_recovery_write_failure.py": {
+      "bytes": 13017,
+      "sha256": "ecf4080027ef75f87aef820f00b4e32066ef92e26cc6ebdf9e59d16cd9a89f83"
+    },
+    "tests/test_nrf_retired_factory.py": {
+      "bytes": 6246,
+      "sha256": "a810d4e21135cc40b1d59d24f71482c85a9b032ced546bcba76400363026a14f"
+    },
+    "tests/test_nrf_retired_image_edit.py": {
+      "bytes": 5602,
+      "sha256": "8e9ea5a42a0929f1902233bda11a0010a29a4927f7414e64ae56e70382bdf23c"
+    },
+    "tests/test_nrf_rgb_led.py": {
+      "bytes": 7089,
+      "sha256": "2c6af743b1afe4b1fed05af4df745e956cd20c2442c02610b3b92796dbfcaca8"
+    },
+    "tests/test_nrf_simple_image_store.c": {
+      "bytes": 7598,
+      "sha256": "ca73af5d6bb1a8166cc83d8714327e78f61fcddd086349f79e1bd00ed79c3611"
+    },
+    "tests/test_nrf_source_full_build.py": {
+      "bytes": 15253,
+      "sha256": "7ed79c0bcdbb4ee5c2ff5c5b4637902a45822a0e4186c98c33d6199099d8cb42"
+    },
+    "tests/test_nrf_ssd1619_deadline.py": {
+      "bytes": 16344,
+      "sha256": "c1a9c331abb59ab7a95b2137fdad966c81f9204a7f615c28ac9c589aa166d7f5"
+    },
+    "tests/test_nrf_ssd1683_full_deadline.py": {
+      "bytes": 5509,
+      "sha256": "0416c809562effdb188192fe2208afb0009bd61d457a9de8f3b2d6337218edac"
+    },
+    "tests/test_nrf_ssd_supported.c": {
+      "bytes": 3773,
+      "sha256": "b2acca4106817a066b9a09e9f71c3ee042327292bfd8577bcc191cc36f9b477f"
+    },
+    "tests/test_nrf_status_priority.py": {
+      "bytes": 6914,
+      "sha256": "aa81056a2ac1197ff6a99db6d94a905dac689b757a3ef9dfce3baa8bbfa33e30"
+    },
+    "tests/test_nrf_status_pulses.py": {
+      "bytes": 6402,
+      "sha256": "67c5d7ac1498bdec2bd9488a45821de50015cf411f058991c26cd082ca003fdf"
+    },
+    "tests/test_nrf_time_pages.py": {
+      "bytes": 5491,
+      "sha256": "d6fe8ce8bda4e4e9dd79ca043c43d6255ee161d8017d30c2df0741333fe6e87a"
+    },
+    "tests/test_nrf_transfer_finish.py": {
+      "bytes": 5319,
+      "sha256": "7d82c641a6ad8cb2cbb5eb94a6ca5800403794dfdc57b16ef9516abce17b031a"
+    },
+    "tests/test_nrf_trimmed_layouts.py": {
+      "bytes": 3433,
+      "sha256": "c5ee06e49bd31ba5e6c6858d73a0576bb164248c34b41be851d284b1b9e35eb8"
+    },
+    "tests/test_nrf_trimmed_screen_admission.py": {
+      "bytes": 3147,
+      "sha256": "17e1ee90e243d216b3e2ea0cadca0d15d01f52aa5c6aaa2c5f8470d5209fc2ec"
+    },
+    "tests/test_nrf_v1_queue.py": {
+      "bytes": 5943,
+      "sha256": "d93b90086ec3ca76f98bf7b75ed41eabd4a1725cb087d787e448b87213b99047"
+    },
+    "tests/test_nrf_v2_transfer.py": {
+      "bytes": 7916,
+      "sha256": "8fd3569d716449b0000ca45b56a1b3e6ed206334a214422ec4511bb81984d48b"
+    },
+    "tests/test_ota_recovery.c": {
+      "bytes": 12971,
+      "sha256": "e02abca0d1f41a29736e5444ebc746c6f17b47595fa04e370dad9fed759ce290"
+    },
+    "tests/test_ota_swap.c": {
+      "bytes": 8860,
+      "sha256": "7019328021fc21c586c8bbb5db8132bef56e6126d0e804937fbcb2c3c72df372"
+    },
+    "tests/test_pin_config.c": {
+      "bytes": 3459,
+      "sha256": "7b082daa50e0240e05f93acb03bf55fc066426eb42320e8cb245acbe3d0fe52a"
+    },
+    "tests/test_power_best_effort.py": {
+      "bytes": 2866,
+      "sha256": "dd0aea9c8ea232a3a26d7fd8728e9a2c7af223289dee03357e78a85ed5d03ae7"
+    },
+    "tests/test_rectangular_screens.c": {
+      "bytes": 3338,
+      "sha256": "ffedd767104003368bf63ac25a6717e9a68f065e1c895ad428291a9a095274d1"
+    },
+    "tests/test_shared_header_helpers.c": {
+      "bytes": 2673,
+      "sha256": "04547ee25ae7fdbcc862aca13abf54c8da5da8be0b80c9ece606414300b4b0ec"
+    },
+    "tests/test_solar_terms.py": {
+      "bytes": 3413,
+      "sha256": "638482eaddf8ecc5825585fef4f98438797c97b96505fdd4c616b63b5cf08945"
+    },
+    "tools/build/build-full.py": {
+      "bytes": 14225,
+      "sha256": "e04c016081a22a053179a55a12610aa14788ced65bc0a7a7e1237fd22ae3908f"
+    },
+    "tools/calendar/README.md": {
+      "bytes": 1216,
+      "sha256": "639299558f599b0f403b75df0d6e3170f0865ebe1b73b5de849fc296134ec63e"
+    },
+    "tools/calendar/generate-solar-terms.py": {
+      "bytes": 5307,
+      "sha256": "50eb63c1f59edc9f9495712e93860d992c9d13fc85597ab7c96d20c7c0c787a0"
+    },
+    "tools/calendar/requirements.txt": {
+      "bytes": 74,
+      "sha256": "b77d9b345e9cf4cd51ad0e572c1dde4b8d7a4ef8214e22224c8a49a0671ec8bf"
+    },
+    "tools/calendar/solar-terms-2000-2050.csv": {
+      "bytes": 15116,
+      "sha256": "f496ab67b98294c541bfc24aa3e19200a426807c779b0e3f953422b8ebc85861"
+    },
+    "tools/calendar/solar-terms-source.json": {
+      "bytes": 951,
+      "sha256": "58a4986e97ca6a8a99fd2d6eabd91fed3493512c7612ccebead6417038b3d077"
+    },
+    "tools/ota/package-nrf52811.py": {
+      "bytes": 3722,
+      "sha256": "7339a8d4fcb53cc82716f7dad92b20f4176f8dbb4de653c4c22177f53aaf7870"
+    },
+    "tools/sdk/check-nordic-inputs.py": {
+      "bytes": 854,
+      "sha256": "9612e937656526d183060e081c17933ff4bbd62a1cbbb8614d571a4005504e11"
+    },
+    "tools/sdk/materialize-nordic-dfu-request.py": {
+      "bytes": 3489,
+      "sha256": "f80218616e32dcdce3c61b013a434d628b9d9410cd46db5238620d1b2100ac30"
+    },
+    "tools/sdk/materialize-nordic-dfu-resume.py": {
+      "bytes": 12659,
+      "sha256": "324efbb1225b48aec3e79e7ae478ac8efc4c7a671b4f91ccc7351a318c3a7dbd"
+    },
+    "tools/sdk/materialize-nordic-dfu-validation.py": {
+      "bytes": 9890,
+      "sha256": "deafbdfd39893306a43b0ea7563cf5fe507f5a495a416071780f920aa6b0fdee"
+    },
+    "tools/sdk/materialize-nordic-recovery-events.py": {
+      "bytes": 3768,
+      "sha256": "20ee21455142b88aa36f8f1fdce4abd2459da87286b3c50625b8af8e6cad9ec7"
+    },
+    "tools/sdk/materialize-nrf52811-startup.py": {
+      "bytes": 1840,
+      "sha256": "43cb472de8882e597f43131d59da741b4d12fd67009859f52cec38043e3cb9df"
+    },
+    "tools/sdk/primary-checkout.py": {
+      "bytes": 1724,
+      "sha256": "f39f7044fcd6a4502708dfbe77eaa01b7253adbb66aa6e507663fbe7b4614164"
+    },
+    "tools/sdk/sdk-lock.json": {
+      "bytes": 3258,
+      "sha256": "5b64f162b9834081a9233a377f9ba8507349c56992c0461cfc266c6ff53e9ad3"
+    },
+    "tools/source/export-free.py": {
+      "bytes": 2413,
+      "sha256": "f5749b70145e5549359cdccccae3a1e6c11c9217dd5cf62e1386f255df4a176a"
+    },
+    "tools/source/free-source-allowlist.json": {
+      "bytes": 14606,
+      "sha256": "8b24e21cd3df7311f99a3061cbe00b412f4d010f8f74fb5121e3dd277db49442"
+    },
+    "tools/source/validate-free.py": {
+      "bytes": 3959,
+      "sha256": "a9a5d42992ffcc230e7959bddd1bb8b00c2a6e88e57b83a5f1d347526a890d85"
+    },
+    "tools/version/sync-version.py": {
+      "bytes": 3694,
+      "sha256": "10efde59970b09323929394335885791122c4d23eefbf33358081aea2809671f"
+    },
+    "version.json": {
+      "bytes": 170,
+      "sha256": "e52eadad14e93c7dd7b3d67d37a29a0c1358253c699e6c208d5372473f411348"
+    }
+  }
+}
