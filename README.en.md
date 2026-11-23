@@ -2,6 +2,9 @@
 
 [中文](README.md) | English
 
+> [!IMPORTANT]
+> **Maintenance moved to InkTag.** Future nRF52811 development and updates will be maintained in the [main InkTag repository](https://github.com/solar2ain/ink-tag). This repository is kept as a historical reference.
+
 InkTag nRF52811 is Bluetooth firmware for AESL/Hema e-paper shelf labels. Turn a panel into a desktop calendar, clock, picture frame or information sign. Configure the display, manage pictures and update firmware using the shared InkTag WebUI or Python CLI.
 
 E-paper reflects ambient light and retains its image after a refresh. Battery life depends on capacity, refresh frequency, Bluetooth use and hardware. Full refreshes may flash and take several to tens of seconds; cold conditions can slow them or cause ghosting. Wait for the image to settle before another operation.
